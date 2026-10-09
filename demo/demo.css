@@ -1,0 +1,69 @@
+:root {
+    color-scheme: dark;
+    --bg: #121218;
+    --panel: #1d1d26;
+    --text: #ececf1;
+    --muted: #9a9aab;
+    --accent: #7c5cff;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+.page p {
+    color: var(--muted);
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.controls button {
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    background: var(--panel);
+    color: var(--text);
+    padding: 8px 12px;
+    font: inherit;
+    cursor: pointer;
+}
+
+.controls button:hover,
+.controls button:focus-visible {
+    background: var(--accent);
+}
+
+.stage {
+    position: relative;
+    height: 560px;
+    border-radius: 12px;
+    background: var(--panel);
+    overflow: hidden;
+}
+
+.stage_label {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+}
+
+.effect {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
